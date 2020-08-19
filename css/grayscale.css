@@ -1,0 +1,644 @@
+/*!
+ * CyberLight Page
+ * Copyright 2019 CyberLight
+ */
+/*Fuentes*/
+ @font-face {
+  font-family: 'CyberFont';
+  src: url('../CustomFonts/Moderan.ttf');
+  font-display: fallback;
+}
+
+section{
+	padding-top: 50px;
+}
+/**********Menu***********/
+#mainNav {
+  min-height: 56px;
+  background-color: #fff;
+}
+
+#mainNav .navbar-toggler {
+  font-size: 80%;
+  padding: 0.75rem;
+  color: #64a19d;
+  border: 1px solid #64a19d;
+}
+
+#mainNav .navbar-toggler:focus {
+  outline: none;
+}
+
+#mainNav .navbar-brand {
+  color: #161616;
+  font-weight: 700;
+  /*padding: .9rem 0;*/
+}
+
+#mainNav .navbar-nav .nav-item:hover {
+  color: fade(white, 80%);
+  outline: none;
+  background-color: transparent;
+}
+
+#mainNav .navbar-nav .nav-item:active, #mainNav .navbar-nav .nav-item:focus {
+  outline: none;
+  background-color: transparent;
+}
+
+@media (min-width: 992px) {
+  #mainNav {
+    padding-top: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+    background-color: transparent;
+    transition: background-color 0.3s ease-in-out;
+  }
+  #mainNav .navbar-brand {
+    /*padding: .5rem 0;*/
+    color: rgba(255, 255, 255, 0.5);
+  }
+    #mainNav .nav-link {
+        transition: none;
+        padding: 2rem 1.5rem;
+        color: rgba(255, 255, 255, 0.75);
+    }
+  #mainNav .nav-link:hover {
+    color: rgba(255, 255, 255, 1);
+  }
+  #mainNav .nav-link:active {
+    color: white;
+  }
+  #mainNav.navbar-shrink {
+    background-color: #fff;
+  }
+  #mainNav.navbar-shrink .navbar-brand {
+    color: #161616;
+  }
+  #mainNav.navbar-shrink .nav-link {
+    color: #161616;
+    padding: 1.5rem 1.5rem 1.25rem;
+    border-bottom: 0.25rem solid transparent;
+  }
+  #mainNav.navbar-shrink .nav-link:hover {
+    color: #64a19d;
+  }
+  #mainNav.navbar-shrink .nav-link:active {
+    color: #467370;
+  }
+  #mainNav.navbar-shrink .nav-link.active {
+    color: #64a19d;
+    outline: none;
+    border-bottom: 0.25rem solid #64a19d;
+  }
+}
+
+
+/*******===========================*******INDEX********=============================************/
+/**Head**/
+.masthead {
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-height: 35rem;
+  padding: 15rem 0;
+  background: linear-gradient(to top, rgba(22, 22, 22, 0.3) 0%, rgba(22, 22, 22, 0.7) 75%, #161616 100%), url("../img/FondoTrans.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+
+
+.masthead h1 {
+  color: azure;
+  font-family: 'CyberFont';
+  font-size: 4.5rem;
+  letter-spacing: 0.8rem;
+  background-color: transparent;
+}
+
+@media (max-width: 600px) {
+  .masthead h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 600px) {
+  .masthead h1 {
+    font-size: 4rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .masthead h1 {
+    font-size: 4.5rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .masthead {
+    height: 100vh;
+    padding: 0;
+  }
+}
+
+
+
+/*.about-section {
+  padding-top: 10rem;
+  background: linear-gradient(to bottom, #161616 0%, rgba(22, 22, 22, 0.9) 75%, rgba(22, 22, 22, 0.8) 100%);
+}
+
+.about-section p {
+  margin-bottom: 5rem;
+}*/
+
+.projects-section {
+  padding: 3rem 0;
+}
+
+.projects-section .featured-text {
+  padding: 2rem;
+}
+
+@media (min-width: 992px) {
+  .projects-section .featured-text-left {
+    padding: 0 0 0 2rem;
+    border-left: 0.5rem solid #64a19d;
+  }
+  .projects-section .featured-text-right {
+    padding: 0 2rem 0 0;
+    border-right: 0.5rem solid #64a19d;
+  }
+}
+
+.projects-section .project-text {
+  padding: 3rem;
+  font-size: 90%;
+}
+
+@media (min-width: 992px) {
+  .projects-section .project-text {
+    padding: 5rem;
+  }
+  .projects-section .project-text hr {
+    border-color: #64a19d;
+    border-width: .25rem;
+    width: 30%;
+  }
+}
+
+/**********************Footer**************************/
+footer {
+  padding: 5rem 0;
+}
+
+.signup-widget {
+  font-family: 'Varela Round';
+  font-size: 80%;
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+  /*background-image: url("../img/fondobottom.jpg");*/
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+
+
+.contact-section .card {
+  border: 0;
+  border-bottom: 0.25rem solid #64a19d;
+  background-color: rgba(22,22,22,0.8);
+}
+
+.contact-section .card h2 {
+	font-size: 50px;
+}
+
+.contact-section .card h4, .contact-section .card label, .contact-section .card h2 {
+  color: antiquewhite;
+  font-size: 0.8rem;
+  font-family: 'Varela Round';
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+}
+
+.contact-section .card hr {
+  border-color: #64a19d;
+  border-width: 0.25rem;
+  width: 80%;
+}
+
+.contact-section .social {
+  margin-top: 3rem;
+  margin-bottom: 15px;
+}
+
+.contact-section .social a {
+  font-size: 20px;
+  text-align: center;
+	width: 45px;
+	height: 45px;
+  padding: 10px;
+  background: rgba(22, 22, 22, 0.8);
+  border-radius: 100%;
+  color: antiquewhite;
+}
+
+.contact-section .social a:hover {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.contact-section .social a:active {
+  color: #fff;
+}
+/********************************************/
+
+/*******************Herramientas*************************/
+.compBorder{
+	border: 2px solid red;
+}
+.compNone{
+	display: none;
+}
+/*****************===========================**GENERALES**========================***************************/
+body {
+  font-family: 'Nunito';
+  letter-spacing: 0.0625em;
+}
+
+.display-special{
+	font-size: 250px;
+}
+
+.texto-black{
+	color: #161616 !important;
+}
+
+.texto-light{
+	color: azure !important;
+}
+
+#myVideo {
+ position: fixed;
+ bottom: 0px;
+ right: 0px;
+ min-width: 100%;
+ min-height: 100%;
+ width: auto;
+ height: auto;
+ z-index: -1000;
+ overflow: hidden;
+}
+
+a {
+  color: paleturquoise;
+}
+
+a:focus, a:hover {
+  text-decoration: none;
+  color: darkturquoise;
+}
+
+.bg-black {
+  background-color: #161616 !important;
+  color: azure;
+}
+
+.bg-black-opacity {
+  background-color: #161616 !important;
+  opacity: 0.8;
+  color: azure;
+}
+
+.bg-black-trans {
+	background-color: rgba(22, 22, 22, 0.8);
+	color: azure;
+}
+
+.bg-light {
+	background-color: azure !important;
+	color: #161616 !important;
+}
+
+.bg-primary {
+  background-color: #64a19d !important;
+  color: #161616;
+}
+
+.text-primary {
+  color: #64a19d !important;
+}
+
+.btn {
+  box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
+  padding: 1.25rem 2rem;
+  font-family: 'Varela Round';
+  font-size: 80%;
+  text-transform: uppercase;
+  letter-spacing: .15rem;
+  border: 0;
+}
+
+.btn-primary {
+  background-color: paleturquoise;
+  color: #161616;
+}
+
+.btn-primary:hover {
+  background-color: darkturquoise;
+}
+
+.btn-primary:focus {
+  background-color: darkturquoise;
+  color: white;
+}
+
+.btn-primary:active {
+  background-color: mediumturquoise !important;
+}
+
+.bordered-top{
+	border-top: 12px solid azure;
+}
+
+.jumbotron{
+	background-color: azure;
+	color: #161616;
+}
+
+
+
+/******************* Timeline Demo - 2 *****************/
+.main-timeline2{padding-top:50px;overflow:hidden;position:relative}
+.main-timeline2:before{content:"";width:7px;height:100%;background:#084772;margin:0 auto;position:absolute;top:80px;left:0;right:0}
+.main-timeline2 .timeline{width:50%;float:left;padding:20px 60px;border-top:7px solid #084772;border-right:7px solid #084772;border-radius:0 30px 0 0;position:relative;right:-3.5px}
+.main-timeline2 .icon{display:block;width:50px;height:50px;line-height:50px;border-radius:50%;background:#e84c47;border:1px solid #fff;text-align:center;font-size:25px;color:#fff;box-shadow:0 0 0 2px #e84c47;position:absolute;top:-30px;left:0}
+.main-timeline2 .timeline-content{display:block;padding:30px 10px 10px;border-radius:20px;background:#e84c47;color:#fff;position:relative}
+.main-timeline2 .timeline-content:hover{text-decoration:none;color:#fff}
+.main-timeline2 .timeline-content:after,.main-timeline2 .timeline-content:before{content:"";display:block;width:10px;height:50px;border-radius:10px;background:#e84c47;border:1px solid #fff;position:absolute;top:-35px;left:50px}
+.main-timeline2 .timeline-content:after{left:auto;right:50px}
+.main-timeline2 .title{font-size:24px;margin:0}
+.main-timeline2 .description{font-size:15px;letter-spacing:1px;margin:0 0 5px}
+.main-timeline2 .timeline:nth-child(2n){border-right:none;border-left:7px solid #084772;border-radius:30px 0 0;right:auto;left:-3.5px}
+.main-timeline2 .timeline:nth-child(2n) .icon{left:auto;right:0;box-shadow:0 0 0 2px #4bd9bf}
+.main-timeline2 .timeline:nth-child(2){margin-top:130px}
+.main-timeline2 .timeline:nth-child(odd){margin:-130px 0 30px}
+.main-timeline2 .timeline:nth-child(even){margin-bottom:80px}
+.main-timeline2 .timeline:first-child,.main-timeline2 .timeline:last-child:nth-child(even){margin:0 0 30px}
+.main-timeline2 .timeline:nth-child(2n) .icon,.main-timeline2 .timeline:nth-child(2n) .timeline-content,.main-timeline2 .timeline:nth-child(2n) .timeline-content:after,.main-timeline2 .timeline:nth-child(2n) .timeline-content:before{background:#4bd9bf}
+.main-timeline2 .timeline:nth-child(3n) .icon,.main-timeline2 .timeline:nth-child(3n) .timeline-content,.main-timeline2 .timeline:nth-child(3n) .timeline-content:after,.main-timeline2 .timeline:nth-child(3n) .timeline-content:before{background:#ff9e09}
+.main-timeline2 .timeline:nth-child(3n) .icon{box-shadow:0 0 0 2px #ff9e09}
+.main-timeline2 .timeline:nth-child(4n) .icon,.main-timeline2 .timeline:nth-child(4n) .timeline-content,.main-timeline2 .timeline:nth-child(4n) .timeline-content:after,.main-timeline2 .timeline:nth-child(4n) .timeline-content:before{background:#3ebae7}
+.main-timeline2 .timeline:nth-child(4n) .icon{box-shadow:0 0 0 2px #3ebae7}
+@media only screen and (max-width:767px){.main-timeline2:before{left:0;right:auto}
+.main-timeline2 .timeline,.main-timeline2 .timeline:nth-child(even),.main-timeline2 .timeline:nth-child(odd){width:100%;float:none;padding:20px 30px;margin:0 0 30px;border-right:none;border-left:7px solid #084772;border-radius:30px 0 0;right:auto;left:0}
+.main-timeline2 .icon{left:auto;right:0}
+}
+@media only screen and (max-width:480px){.main-timeline2 .title{font-size:18px}
+}
+
+/******************************Packs********************************************/
+
+.plans-section ul li {
+  margin-bottom:1.4rem;
+}
+.pricing-divider {
+border-radius: 20px;
+background: #C64545;
+padding: 1em 0 4em;
+position: relative;
+}
+.blue .pricing-divider{
+background: #2D5772; 
+}
+.green .pricing-divider {
+background: #1AA85C; 
+}
+.red b {
+  color:#C64545
+}
+.blue b {
+  color:#2D5772
+}
+.green b {
+  color:#1AA85C
+}
+.pricing-divider-img {
+	position: absolute;
+	bottom: -2px;
+	left: 0;
+	width: 100%;
+	height: 80px;
+}
+.deco-layer {
+	-webkit-transition: -webkit-transform 0.5s;
+	transition: transform 0.5s;
+}
+.btn-custom  {
+  background:#C64545; color:#fff; border-radius:20px
+}
+
+.img-float {
+  width:50px; position:absolute;top:-3.5rem;right:1rem
+}
+
+.princing-item {
+  transition: all 150ms ease-out;
+}
+.princing-item:hover {
+  transform: scale(1.05);
+}
+.princing-item:hover .deco-layer--1 {
+  -webkit-transform: translate3d(15px, 0, 0);
+  transform: translate3d(15px, 0, 0);
+}
+.princing-item:hover .deco-layer--2 {
+  -webkit-transform: translate3d(-15px, 0, 0);
+  transform: translate3d(-15px, 0, 0);
+}
+
+/**********Progress Bar*******************************/
+.progress {
+    position: relative;
+	height: 25px;
+}
+.progress > .progress-type {
+	position: absolute;
+	left: 0px;
+	font-weight: 800;
+	padding: 3px 30px 2px 10px;
+	color: rgb(255, 255, 255);
+	background-color: rgba(25, 25, 25, 0.2);
+}
+.progress > .progress-completed {
+	position: absolute;
+	right: 0px;
+	font-weight: 800;
+	padding: 3px 10px 2px;
+}
+
+.centerImage{
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+		
+}
+
+
+
+.list-none {
+	list-style: none;
+}
+
+
+
+.pp-content {
+	margin-top: 100px;
+}
+
+.Section-contenido {
+	margin-bottom: 0px;
+	background: linear-gradient(to top, rgba(22, 22, 22, 0) 0%, rgba(22, 22, 22, 0.7) 75%, #161616 100%), url("../img/FondoTrans.png");
+  	background-position: center;
+  	background-repeat: no-repeat;
+  	background-attachment: scroll;
+  	background-size: cover;
+}
+
+/*****====================About=====================*****/
+/* CSS Document */
+.masthead-about {
+	  position: relative;
+	  width: 100%;
+	  height: 85vh;
+	  min-height: 35rem;
+	  padding: 15rem 0;
+	  background: linear-gradient(to top, rgba(22, 22, 22, 0.3) 0%, rgba(22, 22, 22, 0.7) 75%, #161616 100%), url("../img/FondoTrans.png");
+	  background-position: center;
+	  background-repeat: no-repeat;
+	  background-attachment: scroll;
+	  background-size: cover;
+}
+#LogoTipo{
+	  color: azure;
+	  font-family: CyberFont;
+	  position: relative;
+	  margin-top: -16vh;
+	  text-shadow: 0px 0px 5px black;
+}
+.masthead-about p{
+	text-shadow: 0px 0px 3px black;
+}
+/******===================Services======================********/
+/***********Header**********/
+.masthead-services .mt-60{
+    margin-top:60px;
+}
+
+.section-block-grey {
+    padding: 90px 0px 90px 0px;
+    background-color: #f9f9f9;
+}
+
+.serv-section-2 {
+    position: relative;
+    border: 1px solid #eee;
+    background: #fff;
+    box-shadow: 0px 10px 30px 0px rgba(50, 50, 50, 0.16);
+    border-radius: 5px;
+    overflow: hidden;
+    padding: 30px;
+	margin-bottom: 20px;
+}
+
+.serv-section-2:before {
+    position: absolute;
+    top: 0;
+    right: 0px;
+    z-index: 0;
+    content: " ";
+    width: 120px;
+    height: 120px;
+    background: #f5f5f5;
+    border-bottom-left-radius: 136px;
+    transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+}
+
+.serv-section-2-icon {
+    position: absolute;
+    top: 18px;
+    right: 22px;
+    max-width: 100px;
+    z-index: 1;
+    text-align: center;
+}
+
+.serv-section-2-icon i {
+    color: #5f27cd;
+    font-size: 48px;
+    line-height: 65px;
+    transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+}
+
+.serv-section-desc {
+    position: relative;
+}
+
+.serv-section-2 h4 {
+    color: #333;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.serv-section-2 h5 {
+    color: #333;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1;
+    margin-top: 5px;
+}
+
+.section-heading-line-left {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 3px;
+    background: #5f27cd;
+    border-radius: 25%;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.serv-section-2 p {
+    margin-top: 25px;
+    padding-right: 50px;
+}
+
+.serv-section-2:hover .serv-section-2-icon i {
+    color: #fff;
+}
+
+.serv-section-2:hover:before {
+    background: #5f27cd;
+}
+.masthead-services {
+  margin-left: 0px;
+  margin-right: 0px;
+  position: relative;
+  height: auto;
+  min-height: 35rem;
+  padding: 10rem 0;
+  background: linear-gradient(to top, rgba(22, 22, 22, 0.3) 0%, rgba(22, 22, 22, 0.7) 75%, #161616 100%), url("../img/FondoTrans.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
